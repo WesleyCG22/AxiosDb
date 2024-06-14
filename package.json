@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "json-server": "json-server --watch src/public/db.json",
-    "start-server": "node index.js",
-    "start": "npm-run-all --parallel json-server start-server"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,14 +14,12 @@
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "json-server": "^1.0.0-beta.1",
     "jsonwebtoken": "^9.0.2",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0",
-    "npm-run-all": "^4.1.5"
+    "nodemon": "^3.1.0"
   },
   "type": "module"
 }
