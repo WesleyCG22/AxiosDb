@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm rebuild sqlite3 --build-from-source",
     "test": "echo \"Error: no test specified\" && exit 1",
     "json-server": "json-server --watch db.json",
     "start": "node index.js"
