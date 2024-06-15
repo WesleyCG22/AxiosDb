@@ -12,7 +12,7 @@ routerUser.post('/signup', async  (req, res) => {
   const idUser = await createUser(req.body)
   
   if (idUser != 'Email já está registrado'){
-    await axios.post('http://localhost:3000/users', {
+    await axios.post('https://json-server-8wsa.onrender.com/users', {
       id: idUser,
       email: req.body.email,
       secretquestion: req.body.secretquestion
@@ -22,7 +22,7 @@ routerUser.post('/signup', async  (req, res) => {
 });
 
 routerUser.post('/recoverpassword', async  (req, res) => {
-  const recover = await axios.get('http://localhost:3000/users')
+  const recover = await axios.get('https://json-server-8wsa.onrender.com/users')
   const userData = recover.data;
   const recoveryUser = req.body
   const searchUserId = await searchUser(recoveryUser.email)
